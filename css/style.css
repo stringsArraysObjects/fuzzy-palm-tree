@@ -1,8 +1,4 @@
-.selector-for-some-widget {
-    box-sizing: content-box;
-  }
   header{
-
     text-align: center;
   }
   
@@ -27,3 +23,13 @@
   .hidden{
     display: none;
   }
+
+.auto-grid {
+ --auto-grid-min-size: repeat(auto-fill, minmax(var)(var(--auto-grid-min-size), 1fr))
+ grid-gap: 1rem;
+}
+
+li {
+  padding: 5rem 1rem;
+  text-align: center;
+}
