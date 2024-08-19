@@ -1,5 +1,5 @@
 document.querySelector('button').addEventListener('click', getAnime)
-const hideHeading = document.querySelector('h3')
+const hideHeading = document.querySelector('div')
  
 function getAnime() {
     fetch('https://nekos.best/api/v2/neko?amount=2',{cache: 'force-cache'})
