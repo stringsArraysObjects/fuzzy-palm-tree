@@ -1,3 +1,16 @@
+#gallery {
+  display:flex;
+  flex-direction: row;
+  justify-content:space-around;
+}
+img{
+  border-radius: 2%;
+  box-shadow: 10px 10px 10px #777;
+
+}
+#gifFigure{
+  align-content: center;
+}
   header{
     text-align: center;
   }
@@ -5,13 +18,12 @@
   body{
     background-color: rgb(83, 83, 81);
     font-size: 2rem;
-    font-family: 'Agbalumo', 'Arial Narrow', sans-serif;
   }
   button{
     font-size: 1.7rem;
     margin: auto;
     background-color: rgb(235, 224, 214);
-    display: block;
+    display: flex;
   }
   h3{
     text-decoration: underline;
@@ -22,14 +34,20 @@
   
   .hidden{
     display: none;
+    
   }
 
-.auto-grid {
- --auto-grid-min-size: repeat(auto-fill, minmax(var)(var(--auto-grid-min-size), 1fr))
- grid-gap: 1rem;
-}
 
 li {
   padding: 5rem 1rem;
   text-align: center;
+}
+@media (min-width: 500px) {
+  #gallery{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap: wrap;
+  }
+  
 }
