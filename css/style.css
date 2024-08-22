@@ -42,7 +42,7 @@ li {
   padding: 5rem 1rem;
   text-align: center;
 }
-@media (min-width: 500px) {
+@media (max-width: 600px) {
   #gallery{
     display:flex;
     flex-direction: row;
