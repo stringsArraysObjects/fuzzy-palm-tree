@@ -1,10 +1,34 @@
+const skeleton =  document.querySelector('.skeletonA')
+const skeleton1 =  document.querySelector('.skeletonB')
+const skeleton2 =  document.querySelector('.skeletonC')
+const anime = document.querySelector('#anime')
+const anime1 = document.querySelector('#anime1')
+const gif = document.querySelector('#gif')
+// const hideHeadings = document.querySelector('section') 
 
- document.addEventListener("readystatechange", (event) => {
-  if(event.target.readyState === "interactive"){
-    getData()
-    getGif()
-  }
- })
+document.addEventListener("readystatechange", (event) => {
+        if (event.target.readyState === "loading") {
+          anime.replaceWith.skeleton
+          anime1.replaceWith.skeleton2
+          gif.replaceWith.skeleton1
+        
+        }else if (event.target.readyState === "complete") {
+            skeleton.remove()
+            skeleton1.remove()
+            skeleton2.remove()
+            getData()
+            getGif()
+            
+            // hideHeadings.classList.toggle('hidden')
+        }
+});
+
+//  document.addEventListener("readystatechange", (event) => {
+//   if(event.target.readyState === "interactive"){
+//     getData()
+//     getGif()
+//   }
+//  })
   async function getData() {
     const url = 'https://nekos.best/api/v2/neko?amount=2';
     try {

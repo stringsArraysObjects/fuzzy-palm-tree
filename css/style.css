@@ -1,3 +1,18 @@
+/*page-loader*/
+.skeletonA, .skeletonC {
+  visibility: visible;
+  animation: skeleton-loading  1s linear infinite alternate;
+}
+.skeletonB {
+  visibility: visible;
+  animation: skeleton-loading  1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {background-color: #939491}
+  100% {background-color: #939491;}
+}
+
 #gallery {
   display:flex;
   flex-direction: row;
