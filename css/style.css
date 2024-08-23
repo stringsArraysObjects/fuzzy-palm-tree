@@ -7,56 +7,48 @@
   visibility: visible;
   animation: skeleton-loading  1s linear infinite alternate;
 }
+/*tags*/
 
-@keyframes skeleton-loading {
-  0% {background-color: #939491}
-  100% {background-color: #939491;}
+body{
+  background-color: rgb(83, 83, 81);
+  font-size: 2rem;
 }
 
+img{
+  border-radius: 2%;
+  box-shadow: 10px 10px 10px #777;
+}
+figcaption{
+  border: 5px solid rgb(101, 101, 95);
+  text-align: center;
+  box-shadow: 10px 10px 10px #777;
+  
+}
+/*id*/
 #gallery {
   display:flex;
   flex-direction: row;
   justify-content:space-around;
 }
-img{
-  border-radius: 2%;
-  box-shadow: 10px 10px 10px #777;
 
-}
 #gifFigure{
   align-content: center;
+ justify-self: center;
 }
-  header{
-    text-align: center;
-  }
-  
-  body{
-    background-color: rgb(83, 83, 81);
-    font-size: 2rem;
-  }
-  button{
-    font-size: 1.7rem;
-    margin: auto;
-    background-color: rgb(235, 224, 214);
-    display: flex;
-  }
-  h3{
-    text-decoration: underline;
-  }
-  ul{
-    list-style: none;
-  }
-  
-  .hidden{
+
+/*class*/
+
+.hidden{
     display: none;
     
   }
 
-
-li {
-  padding: 5rem 1rem;
-  text-align: center;
+/*other*/
+@keyframes skeleton-loading {
+  0% {background-color: #939491}
+  100% {background-color: #939491;}
 }
+
 @media (max-width: 600px) {
   #gallery{
     display:flex;
