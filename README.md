@@ -1,2 +1,1 @@
-
-<img src="/Image/animeEdit1.png" />
+<img src="/Image/animeEdit1.png" alt="animepic"/>
