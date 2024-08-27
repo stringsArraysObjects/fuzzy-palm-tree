@@ -1,1 +1,1 @@
-<img src="/Image/animeEdit1.png" alt="animepic"/>
+![alt text](image.png)
