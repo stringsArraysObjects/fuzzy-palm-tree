@@ -17,6 +17,7 @@ body{
 img{
   border-radius: 2%;
   box-shadow: 10px 10px 10px #777;
+  border: 10px ridge white;
 }
 figcaption{
   border: 5px solid rgb(101, 101, 95);
